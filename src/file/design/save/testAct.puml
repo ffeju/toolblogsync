@@ -1,0 +1,27 @@
+@startuml
+/'(*)  --> "check input"
+If "input is verbose" then
+--> [Yes] "turn on verbosity"
+--> "run command"
+
+--> "run command"
+Endif
+-->(*)'/
+
+
+start
+:Hello world;
+:This no define on serval **lines**;
+
+if(是否最大化) then(确认)
+:process
+:process all\ndiagrams;
+else(最小化)
+:process only
+ __sequence__ and __activity__ diagrams;
+
+endif
+
+stop
+
+@enduml
